@@ -238,7 +238,7 @@ func ToolPath(tool, target string) string {
 				}
 				return filepath.Join(QT_MSYS2_DIR(), "bin", tool)
 			}
-			path := filepath.Join(QT_DIR(), QT_VERSION_MAJOR(), MINGWDIR(), "bin", tool)
+			path := filepath.Join(QT_DIR(), MINGWDIR(), "bin", tool)
 			if !ExistsDir(filepath.Join(QT_DIR(), QT_VERSION_MAJOR())) {
 				path = filepath.Join(QT_DIR(), QT_VERSION(), MINGWDIR(), "bin", tool)
 			}
